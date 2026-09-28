@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CircuitCare | Electronics Repair</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header>
+  <h1>CircuitCare</h1>
+  <p>Electronics repair and troubleshooting</p>
+
+  <nav aria-label="Main navigation">
+    <a href="#services">Services</a>
+    <a href="#process">How it works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+  
+
+  <main>
+    <section>
+      <h2>Need help with a device?</h2>
+      <p>We help diagnose and repair everyday electronics.</p>
+      <a class = "button" href="#contact">Contact us</a>
+    </section>
+
+ <section id="services">
+  <h2>Services</h2>
+
+  <div class="services-grid">
+    <article class="service-card">
+      <h3>Device troubleshooting</h3>
+      <p>Help finding the cause of common device problems.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Basic electronics repair</h3>
+      <p>Support with simple repair and component issues.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Project support</h3>
+      <p>Help testing electronics projects and prototypes.</p>
+    </article>
+  </div>
+</section>
+
+<section id="process">
+  <h2>How it works</h2>
+  <ol>
+    <li>Tell us what needs attention.</li>
+    <li>We discuss the next step.</li>
+    <li>We arrange a time to help.</li>
+  </ol>
+</section>
+
+   <section id="contact">
+  <h2>Request repair help</h2>
+  <p>Fill in the form to preview a request.</p>
+
+  <form id="repair-form">
+    <label for="customer-name">Your name</label>
+    <input id="customer-name" type="text" required>
+
+    <label for="device">Device or project</label>
+    <input id="device" type="text" required>
+
+    <label for="issue">What needs attention?</label>
+    <textarea id="issue" rows="4" required></textarea>
+
+    <button class="button" type="submit">Preview request</button>
+  </form>
+
+  <p id="form-result" aria-live="polite"></p>
+</section>
+  </main>
+</body>
+</html>
