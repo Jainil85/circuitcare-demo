@@ -151,6 +151,10 @@
             <input id="customer-name" name="customer-name" type="text" placeholder="How should we address you?" autocomplete="name" required>
           </div>
           <div class="form-row">
+            <label for="customer-email">Your email address</label>
+            <input id="customer-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-row">
             <label for="device">Device or project</label>
             <input id="device" name="device" type="text" placeholder="e.g. headphones, desk lamp, Arduino" required>
           </div>
@@ -159,7 +163,7 @@
             <textarea id="issue" name="issue" rows="4" placeholder="Tell us what you’ve noticed" required></textarea>
           </div>
           <button class="button button-primary form-submit" type="submit">Send repair request <span aria-hidden="true">→</span></button>
-          <p class="form-note"><span aria-hidden="true">ⓘ</span> FormSubmit delivers your request and stores submissions for up to 30 days.</p>
+          <p class="form-note"><span aria-hidden="true">ⓘ</span> Your name, email, and request go through FormSubmit; submissions are stored for up to 30 days.</p>
           <p class="form-result" id="form-result" aria-live="polite" role="status"></p>
         </form>
       </div>
