@@ -11,6 +11,7 @@ if (form && result) {
     if (submitButton.disabled) return;
 
     const name = document.querySelector("#customer-name").value.trim();
+    const senderEmail = document.querySelector("#customer-email").value.trim();
     const device = document.querySelector("#device").value.trim();
     const issue = document.querySelector("#issue").value.trim();
 
@@ -27,6 +28,8 @@ if (form && result) {
         },
         body: JSON.stringify({
           name: name,
+          email: senderEmail,
+          _replyto: senderEmail,
           "Device or project": device,
           "What needs attention": issue,
           _subject: "CircuitCare repair request: " + device
