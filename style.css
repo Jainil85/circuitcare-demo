@@ -124,8 +124,8 @@ h1, h2, h3 { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe U
 .form-note { display: flex; align-items: center; gap: 7px; margin: 12px 0 0; color: #7c898e; font-size: 10px; }
 .form-note span { color: var(--teal-deep); font-size: 14px; }
 .form-result { margin: 12px 0 0; color: var(--teal-deep); font-size: 12px; font-weight: 700; }
-.form-result a { color: var(--teal-deep); text-underline-offset: 3px; }
-.form-result a:hover, .form-result a:focus-visible { color: var(--navy); }
+.form-result.is-error { color: #a43f3f; }
+.form-submit:disabled { cursor: wait; opacity: .72; }
 
 .site-footer { color: #b8c9cc; background: #0c1e2b; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding-block: 28px; border-bottom: 1px solid rgb(255 255 255 / 9%); }
